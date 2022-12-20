@@ -1,0 +1,28 @@
+{
+  "name": "libreria",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.2.1",
+    "@fortawesome/free-solid-svg-icons": "^6.2.1",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "axios": "^1.2.0",
+    "boostrap": "^2.0.0",
+    "bootstrap": "^5.2.3",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "express-myconnection": "^1.0.4",
+    "mysql": "^2.18.1",
+    "reactstrap": "^9.1.5"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
