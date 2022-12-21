@@ -1,22 +1,24 @@
 const express = require('express');
 const mysql = require('mysql');
+const mysql2 = require('mysql2');
 const myconn = require('express-myconnection');
 const routes = require('./routes')
 const cors = require('cors')
 const app = express();
+const PORT = require('./config')
 
-app.set('port',9000);
+app.set('port',PORT);
 
 const dbOptions={
-    host:'localhost',
-    port:'3306',
+    host:'containers-us-west-95.railway.app',
+    port:'6869',
     user:'root',
-    password:'ku8awu4o',
-    database:'deportes'
+    password:'nUd4o93RQpaq6pD9SNta',
+    database:'railway'
 }
 //middlewares----------------------
 app.use(cors())
-app.use(myconn(mysql,dbOptions,'single'))
+app.use(myconn(mysql2,dbOptions,'single'))
 app.use(express.json());
 //Routes---------------------
 
